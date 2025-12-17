@@ -184,7 +184,7 @@ int main(void)
     }
 
     //Copy in a string
-    strncpy((char*)readBuf, "a new file is made!", 19);
+    strncpy((char*)readBuf, "a new file is made!", 21);
     UINT bytesWrote;
     fres = f_write(&fil, readBuf, 19, &bytesWrote);
     if(fres == FR_OK) {
